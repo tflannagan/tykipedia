@@ -40,7 +40,10 @@ export default function Root() {
     <>
       <div id="sidebar">
         <h1>
-          <strong>Ty</strong>kipedia
+          <span>
+            <strong>Ty</strong>
+          </span>
+          kipedia
         </h1>
         <div>
           <Form id="search-form" role="search">
