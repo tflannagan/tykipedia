@@ -1,11 +1,11 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: 'Cutive Mono', monospace; */
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 600;
 
   color-scheme: light dark;
-  color: rgba(79, 79, 79, 0.87);
-  background-color: #d0d0d0;
+  color: rgba(31, 31, 31, 0.87);
+  background-color: #fdfcfc;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -16,7 +16,7 @@
 
 a {
   font-weight: 500;
-  color: #ffffff;
+  color: #0e0e0e89;
   text-decoration: inherit;
 }
 a:hover {
@@ -34,6 +34,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  
 }
 
 button {
@@ -55,7 +56,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -66,7 +67,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 html {
   box-sizing: border-box;
@@ -134,24 +135,32 @@ button:active {
 #contact h1 form {
   display: flex;
   align-items: center;
-  margin-top: 0.25rem;
+  /* margin-top: 0.25rem; */
 }
 #contact h1 form button {
   box-shadow: none;
   font-size: 1.5rem;
   font-weight: 400;
+  height: 4vh;
+  width: 2vw;
   padding: 0;
+  
 }
 #contact h1 form button[value="true"] {
   color: #e4e4e4;
+  /* padding: 0.2rem;
+  border-radius: 100000000000000000px; */
 }
 #contact h1 form button[value="true"]:hover,
 #contact h1 form button[value="false"] {
-  color: #eeb004;
+  color:  hsl(174, 98%, 58%);
+  
+  
+  
 }
 
 form[action$="destroy"] button {
-  color: #f44250;
+  color:  hsl(174, 98%, 58%);
 }
 
 .sr-only {
@@ -174,7 +183,7 @@ form[action$="destroy"] button {
 
 #sidebar {
   width: 22rem;
-  background-color: #3c3c3c2e;
+  background-color: #3c3c3c93;
   border-right: solid 1px #e3e3e3;
   display: flex;
   flex-direction: column;
@@ -188,6 +197,9 @@ form[action$="destroy"] button {
 #sidebar h1 {
   font-size: 1.5rem;
   font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 4.6px;
   display: flex;
   align-items: center;
   margin: 0rem 1rem;
@@ -273,7 +285,7 @@ form[action$="destroy"] button {
 }
 
 i {
-  color: #818181;
+  color: #2f2f2fa4;
 }
 #sidebar nav .active i {
   color: inherit;
@@ -304,7 +316,7 @@ i {
 }
 
 #sidebar nav a:hover {
-  background: #e3e3e3;
+  background: #d8d8d871;
 }
 
 #sidebar nav a.active {
@@ -338,6 +350,7 @@ i {
   font-weight: 700;
   margin: 0;
   line-height: 1.2;
+  
 }
 
 #contact h1 + p {
@@ -350,26 +363,27 @@ i {
 
 #contact h1:focus {
   outline: none;
-  color: hsl(181, 98%, 58%);
+  color: hsl(0, 0%, 7%);
 }
 
 #contact a[href*="twitter"] {
   display: flex;
   font-size: 0.9rem;
-  color: #000000;
+  color: #080808;
   text-decoration: none;
 }
 #contact a[href*="twitter"]:hover {
-  text-decoration: underline;
-  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  color:  hsl(174, 98%, 58%);
 }
 
 #contact img {
-  width: 12rem;
-  height: 12rem;
+  width: 10rem;
+  height: 10rem;
   background: #c8c8c8;
-  margin-right: 2rem;
-  border-radius: 1.5rem;
+  margin-top: 0.5rem;
+  margin-right: 2.5rem;
+  border-radius: 100%;
   object-fit: cover;
 }
 
@@ -474,7 +488,7 @@ i {
 }
 
 .favorite-button {
-  padding: 1rem;
-  margin: 0.5rem;
-  border-radius: 25%;
+
+  margin: 0.6rem 0rem 0.5rem 0rem;
+  
 }

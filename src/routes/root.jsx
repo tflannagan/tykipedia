@@ -39,7 +39,9 @@ export default function Root() {
   return (
     <>
       <div id="sidebar">
-        <h1>Tykipedia</h1>
+        <h1>
+          <strong>Ty</strong>kipedia
+        </h1>
         <div>
           <Form id="search-form" role="search">
             <input
